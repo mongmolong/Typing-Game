@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타이핑게임</title>
+    <link rel="stylesheet" href="typing_game.css">
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<body class="bg-dark text-white">
+    <header class="bg-success text-center p-3 mb-5">
+        <h1>Typing master</h1>
+    </header>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col mx-auto">
+                <p class="lead">
+                    주어진 단어를 <span class="text-success">7</span>초 안에 타이핑 하기!
+                </p>
+                <h2 class="display-2 mb-5" id="current-word">Start</h2>
+                <input type="text" class="form-control " id="word-input" placeholder="start typing..">
+                <h4 class="mt-3" id="message">Game Over</h4>
+            </div>
+            <div class="row">
+                <div class="col-12 col-xl-6">
+                    <h3>Time left : <span id="time">0</span></h3>
+                </div>
+                <div class="col-12 col-xl-6">
+                    <h3>score : <span id="score">0</span></h3>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                    <div class="card card-body text-white bg-success">
+                        <h5>안내방법</h5>
+                        <p>각 단어를 주어진 시간 안에 타이핑하고, 다시 시작하려면 주어진 단어를 입력하세요.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <button class="col-12 col-sm-3 btn btn-primary">초급</button>
+                    <button class="col-12 col-sm-3 btn btn-danger">중급</button>
+                    <button class="col-12 col-sm-3 btn btn-secondary">고급</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="typing_game.js"></script>
+</body>
+
+</html>
