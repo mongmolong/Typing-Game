@@ -59,7 +59,7 @@ function countDown() {
 }
 
 function setNewWord() {
-    time = GAME_TIME; //??
+    time = GAME_TIME;
     wordInput.value = "";
     message.innerText = "Now Playing!";
     const randomIndex = Math.floor(Math.random() * words.length);
